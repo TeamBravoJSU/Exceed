@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\stage_one_music</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="player">
       <sprite>sprites\sprPlayer</sprite>
@@ -39,6 +41,7 @@
     </objects>
     <objects name="enemies">
       <object>objects\objEnemy</object>
+      <object>objects\enemy2</object>
     </objects>
     <objects name="gameStuff">
       <object>objects\objControl</object>
