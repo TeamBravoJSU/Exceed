@@ -30,6 +30,8 @@ var haxis = gamepad_axis_value(0, gp_axislh);
 var vaxis = gamepad_axis_value(0, gp_axislv);
 direction = point_direction(0, 0, haxis, vaxis);
 speed = point_distance(0 ,0, haxis, vaxis) * 5;
+turnDir = "none"
+image_speed = 0.3
 
 
 life = 1
@@ -109,19 +111,45 @@ room_goto(rmMenu);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check(vk_up) y -= 4;
-if keyboard_check(vk_down) y += 4;
-if keyboard_check(vk_left) x -= 4;
-if keyboard_check(vk_right) x += 4;
+            <string>/*if gamepad_button_check_pressed(0,gp_face1){
+    p = instance_create(x, y, playerProjectile_obj)
+    p.speed = 15
+    p.direction = direction
+}
+
+if gamepad_button_check(0,gp_axislv){
+    
+
+}
+
+if gamepad_button_check_pressed(0,gp_shoulderlb){
+    hspeed -= 3
+    vspeed -=3
+}
+if gamepad_button_check_released(0,gp_shoulderlb){
+    hspeed += 3
+    vspeed +=3
+}
+*/
+if keyboard_check(vk_up) y -= 4
+if keyboard_check(vk_down) y += 4
+if keyboard_check(vk_left){
+     x -= 4
+     turnDir = "left"
+}
+if keyboard_check(vk_right){
+     x += 4
+     turnDir = "right"
+}
 
 x = median(80, x, room_width-80);
-y = median(80, y, room_height-120);
+y = median(80, y, room_height-120)
 
 if (keyboard_check(ord("X"))){
 if (alarm[0] &lt; 0) {
     alarm[0] = room_speed * 0.25; 
-    instance_create(x-30, y, objPlayerBullet);
-    instance_create(x+30, y, objPlayerBullet);
+    instance_create(x-30, y, objPlayerBullet)
+    instance_create(x+30, y, objPlayerBullet)
     }
 }
 
@@ -180,6 +208,103 @@ if (health &lt; 1){                 // If health has fallen too low
 instance_destroy();              // Destroy the calling instance
 }
 with (other) instance_destroy(); // Destroy the bullet
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_speed = 0.3
+
+if turnDir == "left" {
+   sprite_index = Ship_Turn
+}
+if turnDir == "right" {
+   sprite_index = Ship_Turn_R
+}
+if turnDir == "none" {
+   sprite_index = sprPlayer
+}
+if turnDir == "leftToCenter" {
+   sprite_index = Ship_Left_Return
+}
+if turnDir == "rightToCenter" {
+   sprite_index = Ship_Right_Return
+}
+if sprite_index == Ship_Turn or sprite_index == Ship_Turn_R {
+    if image_index &gt;= image_number - 1 {
+        image_speed = 0
+    }
+}
+if sprite_index == Ship_Left_Return or sprite_index == Ship_Right_Return {
+    if image_index &gt;= image_number - 1 {
+        sprite_index = sprPlayer
+        turnDir = "none"
+    }
+}
+draw_sprite(sprite_index,image_index,x,y,)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="39">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>turnDir = "rightToCenter"
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="37">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>turnDir = "leftToCenter"
 </string>
           </argument>
         </arguments>
