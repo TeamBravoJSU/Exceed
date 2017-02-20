@@ -30,6 +30,7 @@
       <sprite>sprites\sprEnemy</sprite>
       <sprite>sprites\sprExplosion</sprite>
       <sprite>sprites\Enemy_Sprite_2</sprite>
+      <sprite>sprites\sprGameOver1945</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -60,11 +61,13 @@
       <object>objects\objButtonPlay</object>
       <object>objects\objExplosion</object>
       <object>objects\enemySpawner</object>
+      <object>objects\objGameOver</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>
     <room>rooms\rmGame</room>
+    <room>rooms\rmGameOver</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
