@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>audio_play_sound(stage_one_music, 1, y)</code>
+  <code>audio_stop_all()
+audio_play_sound(stage_one_music, 1, y)</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

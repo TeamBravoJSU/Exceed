@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\stage_one_music</sound>
+    <sound>sound\menuMusic</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
