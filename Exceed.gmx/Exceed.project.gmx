@@ -24,6 +24,7 @@
     <sprites name="gameSprites">
       <sprite>sprites\sprTitle1945</sprite>
       <sprite>sprites\sprButtonPlay1945</sprite>
+      <sprite>sprites\sprButtonPlayExceed</sprite>
       <sprite>sprites\sprLife1945</sprite>
       <sprite>sprites\sprIsland</sprite>
       <sprite>sprites\sprEnemy</sprite>
