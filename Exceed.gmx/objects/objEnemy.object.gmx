@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed = 3;                // Set the vertical speed
+            <string>vspeed = 6;                // Set the vertical speed
 alarm[0] = room_speed * 1; // Set shooting timer to a second
 hp = 2;                    // Set the “health” of the enemy
 </string>

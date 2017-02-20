@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed = 5;  // the instance will move down the screen
+            <string>vspeed = 10;  // the instance will move down the screen
 </string>
           </argument>
         </arguments>
