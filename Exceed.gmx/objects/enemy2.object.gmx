@@ -52,10 +52,10 @@ zigzag= 15;
           <argument>
             <kind>1</kind>
             <string>zigzag= 20;
-p= instance_create(x, y, objEnemyBullet);
+p= instance_create(x, y, objEnemyBullet2);
 p.speed= 15;
 p.direction = 290;
-p= instance_create(x, y, objEnemyBullet);
+p= instance_create(x, y, objEnemyBullet2);
 p.speed= 15
 p.direction= 250;
 alarm[0] = room_speed * choose(1, 2, 3);

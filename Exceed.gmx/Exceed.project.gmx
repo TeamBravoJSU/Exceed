@@ -20,6 +20,7 @@
     <sprites name="projectiles">
       <sprite>sprites\sprPlayerBullet</sprite>
       <sprite>sprites\sprEnemyBullet</sprite>
+      <sprite>sprites\Enemy_Proj_2_Sprite</sprite>
     </sprites>
     <sprites name="gameSprites">
       <sprite>sprites\sprTitle1945</sprite>
@@ -47,6 +48,7 @@
     <objects name="projectiles">
       <object>objects\objPlayerBullet</object>
       <object>objects\objEnemyBullet</object>
+      <object>objects\objEnemyBullet2</object>
     </objects>
     <objects name="enemies">
       <object>objects\objEnemy</object>
