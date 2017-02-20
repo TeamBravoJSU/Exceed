@@ -7,7 +7,6 @@
   <sounds name="sound">
     <sound>sound\stage_one_music</sound>
     <sound>sound\menuMusic</sound>
-    <sound>sound\sound2</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed = 20;                // Set the vertical speed
+            <string>hspeed = 6; //Set hoirzontal Speed
+vspeed = 20;                // Set the vertical speed
 alarm[0] = room_speed * 3; // Set shooting timer to a second
 hp = 2;                    // Set the “health” of the enemy
 zigzag= 15;
