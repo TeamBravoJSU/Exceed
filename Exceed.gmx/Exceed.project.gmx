@@ -30,6 +30,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bckSeaTile</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -53,6 +54,7 @@
       <object>objects\objTitle</object>
       <object>objects\objButtonPlay</object>
       <object>objects\objExplosion</object>
+      <object>objects\enemySpawner</object>
     </objects>
   </objects>
   <rooms name="rooms">

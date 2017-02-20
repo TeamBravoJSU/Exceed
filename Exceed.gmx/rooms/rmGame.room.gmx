@@ -53,8 +53,6 @@
   <instances>
     <instance objName="objPlayer" x="448" y="608" name="inst_AAD0C0BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objControl" x="32" y="32" name="inst_88AD6C53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemy2" x="288" y="96" name="inst_490E3412" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemy2" x="544" y="160" name="inst_576BFC6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
