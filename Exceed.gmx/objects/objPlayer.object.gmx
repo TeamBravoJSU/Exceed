@@ -25,11 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>gamepad_axis_count(2)
+            <string>/*gamepad_axis_count(2)
 var haxis = gamepad_axis_value(0, gp_axislh);
 var vaxis = gamepad_axis_value(0, gp_axislv);
 direction = point_direction(0, 0, haxis, vaxis);
 speed = point_distance(0 ,0, haxis, vaxis) * 50;
+*/
 turnDir = "none"
 image_speed = 0.3
 
@@ -111,27 +112,7 @@ room_goto(rmMenu);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if gamepad_button_check_pressed(0,gp_face1){
-    p = instance_create(x, y, playerProjectile_obj)
-    p.speed = 15
-    p.direction = direction
-}
-
-if gamepad_button_check(0,gp_axislv){
-    
-
-}
-
-if gamepad_button_check_pressed(0,gp_shoulderlb){
-    hspeed -= 3
-    vspeed -=3
-}
-if gamepad_button_check_released(0,gp_shoulderlb){
-    hspeed += 3
-    vspeed +=3
-}
-*/
-if keyboard_check(vk_up) y -= 10
+            <string>if keyboard_check(vk_up) y -= 10
 if keyboard_check(vk_down) y += 10
 if keyboard_check(vk_left){
      x -= 10
