@@ -8,6 +8,7 @@
     <sound>sound\stage_one_music</sound>
     <sound>sound\menuMusic</sound>
     <sound>sound\gameOverMusic</sound>
+    <sound>sound\stage2_stage_music</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">

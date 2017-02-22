@@ -28,6 +28,7 @@
             <string>score = 0;
 lives  = 3;
 health = 100;
+spawnInterval= 60;
 alarm[0] = room_speed;
 alarm[1] = room_speed * 2;
 </string>
@@ -55,7 +56,8 @@ alarm[1] = room_speed * 2;
             <string>var xpos = irandom_range(50, room_width-50);
 instance_create(xpos, -100, objEnemy);
 instance_create(xpos, -100, enemy2);
-alarm[1] = room_speed * 2;
+alarm[1] = spawnInterval;
+
 </string>
           </argument>
         </arguments>
@@ -81,6 +83,34 @@ alarm[1] = room_speed * 2;
             <string>var xpos = irandom(room_width);
 instance_create(xpos, -100, objIsland);
 alarm[0] = room_speed + random(room_speed * 4); 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if score &lt; 1000{
+spawnInterval = 60}
+else if score &lt; 2000{
+spawnInterval = 30}
+else if score &lt; 3000{
+spawnInterval = 15}
 </string>
           </argument>
         </arguments>
