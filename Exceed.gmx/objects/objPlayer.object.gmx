@@ -112,7 +112,12 @@ room_goto(rmGameOver);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check(vk_up) y -= 10
+            <string>if (health &lt; 1){                 // If health has fallen too low
+    audio_play_sound(explosion,0,0)
+    instance_destroy();              // Destroy the calling instance
+}
+
+if keyboard_check(vk_up) y -= 10
 if keyboard_check(vk_down) y += 10
 if keyboard_check(vk_left){
      x -= 10
@@ -131,6 +136,7 @@ if (alarm[0] &lt; 0) {
     alarm[0] = room_speed * 0.25; 
     instance_create(x-30, y, objPlayerBullet)
     instance_create(x+30, y, objPlayerBullet)
+    audio_play_sound(laser_default,0,0)
     }
 }
 
@@ -159,6 +165,7 @@ if (alarm[0] &lt; 0) {
             <string>with (other){
 instance_create(x, y, objExplosion); // Create an explosion at the enemy position
 instance_destroy();                  // Destroy the enemy
+audio_play_sound(explosion,0,0)
 }
 instance_create(x, y, objExplosion); // Create an explosion at the player position
 instance_destroy();                  // Destroy the player
@@ -187,6 +194,7 @@ instance_destroy();                  // Destroy the player
             <string>with (other){
 instance_create(x, y, objExplosion); // Create an explosion at the enemy position
 instance_destroy();                  // Destroy the enemy
+audio_play_sound(explosion,0,0)
 }
 instance_create(x, y, objExplosion); // Create an explosion at the player position
 instance_destroy();                  // Destroy the player
@@ -213,9 +221,6 @@ instance_destroy();                  // Destroy the player
           <argument>
             <kind>1</kind>
             <string>health -= 10;                    // Reduce health because of damage
-if (health &lt; 1){                 // If health has fallen too low
-instance_destroy();              // Destroy the calling instance
-}
 with (other) instance_destroy(); // Destroy the bullet
 </string>
           </argument>
@@ -240,9 +245,6 @@ with (other) instance_destroy(); // Destroy the bullet
           <argument>
             <kind>1</kind>
             <string>health -= 10;                    // Reduce health because of damage
-if (health &lt; 1){                 // If health has fallen too low
-instance_destroy();              // Destroy the calling instance
-}
 with (other) instance_destroy(); // Destroy the bullet
 </string>
           </argument>
