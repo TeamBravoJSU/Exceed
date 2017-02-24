@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>spawnInterval= 120;
+alarm[0] = room_speed * 2;
+</string>
           </argument>
         </arguments>
       </action>
@@ -47,7 +49,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>var xpos = irandom_range(50, room_width-50);
+instance_create(xpos, -100, enemy2);
+alarm[0] = spawnInterval;
+
+</string>
           </argument>
         </arguments>
       </action>

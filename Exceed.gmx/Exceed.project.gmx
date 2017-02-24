@@ -71,8 +71,8 @@
       <object>objects\objGameOver</object>
       <object>objects\objMainMenuButton</object>
       <object>objects\objRetryButton</object>
+      <object>objects\healthPickup</object>
     </objects>
-    <object>objects\healthPickup</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>

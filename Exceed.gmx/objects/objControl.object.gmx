@@ -55,7 +55,6 @@ alarm[1] = room_speed * 2;
             <kind>1</kind>
             <string>var xpos = irandom_range(50, room_width-50);
 instance_create(xpos, -100, objEnemy);
-instance_create(xpos, -100, enemy2);
 alarm[1] = spawnInterval;
 
 </string>
