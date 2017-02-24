@@ -42,7 +42,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bckSeaTile</background>
-    <background>background\background1</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -72,6 +72,7 @@
       <object>objects\objMainMenuButton</object>
       <object>objects\objRetryButton</object>
     </objects>
+    <object>objects\healthPickup</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>
