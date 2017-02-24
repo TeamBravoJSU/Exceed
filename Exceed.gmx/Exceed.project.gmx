@@ -39,6 +39,7 @@
       <sprite>sprites\sprMainMenu</sprite>
       <sprite>sprites\sprRetry</sprite>
       <sprite>sprites\Get_Orb_Sprite</sprite>
+      <sprite>sprites\sprLevel_Select</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -73,12 +74,14 @@
       <object>objects\objMainMenuButton</object>
       <object>objects\objRetryButton</object>
       <object>objects\healthPickup</object>
+      <object>objects\objLevelSelect</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>
     <room>rooms\rmGame</room>
     <room>rooms\rmGameOver</room>
+    <room>rooms\rmLevelSelect</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
