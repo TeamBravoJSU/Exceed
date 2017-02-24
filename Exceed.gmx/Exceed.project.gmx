@@ -82,6 +82,7 @@
     <room>rooms\rmGame</room>
     <room>rooms\rmGameOver</room>
     <room>rooms\rmLevelSelect</room>
+    <room>rooms\stage2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
