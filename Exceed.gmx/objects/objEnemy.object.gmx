@@ -52,7 +52,7 @@ hp = 2;                    // Set the “health” of the enemy
             <kind>1</kind>
             <string>randnum= random_range(1,100)
 if randnum &lt;50{
-instance_create(healthPickup)
+instance_create(x, y, healthPickup)
 }
 </string>
           </argument>
