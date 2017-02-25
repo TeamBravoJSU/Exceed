@@ -139,10 +139,10 @@ draw_text(20, 20, string(score));
 var ww = display_get_gui_width();
 var hh = display_get_gui_height();
 for (var n = 0; n &lt; lives; n++){
-draw_sprite(sprLife1945, 0, 24 + (n * 80), display_get_gui_height() - 75);
+draw_sprite(sprLife1945, 0, 24 + (n * 60), display_get_gui_height() - 75);
 }
 
-draw_healthbar((ww/2) - 128,  hh - 48, (ww / 2) + 128, hh - 24, health, c_black, c_ltgray, c_ltgray, 0, true, true);
+draw_healthbar((ww/2) - 128,  hh - 48, (ww / 2) + 128, hh - 24, health, c_ltgray, c_yellow, c_yellow, 0, true, true);
 </string>
           </argument>
         </arguments>
