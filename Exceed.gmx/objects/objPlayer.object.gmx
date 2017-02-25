@@ -368,6 +368,10 @@ with (objEnemy)
 {instance_destroy()}
 with (enemy2)
 {instance_destroy()}
+with (objEnemyBullet)
+{instance_destroy()}
+with (objEnemyBullet2)
+{instance_destroy()}
 }
 bomb--
 </string>
