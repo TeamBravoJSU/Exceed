@@ -9,9 +9,14 @@
     <sound>sound\menuMusic</sound>
     <sound>sound\gameOverMusic</sound>
     <sound>sound\stage2_stage_music</sound>
+    <sound>sound\stage3_stage_music</sound>
     <sound>sound\explosion</sound>
     <sound>sound\laser_default</sound>
     <sound>sound\laser_widebeam</sound>
+    <sound>sound\stage_select_music</sound>
+    <sound>sound\boss_music1</sound>
+    <sound>sound\boss_music2</sound>
+    <sound>sound\shop_theme</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
