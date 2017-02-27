@@ -50,6 +50,9 @@
       <sprite>sprites\sprLevelTwo</sprite>
       <sprite>sprites\sprLevelThree</sprite>
     </sprites>
+    <sprites name="BossSprites">
+      <sprite>sprites\MonkeySprite</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bckSeaTile</background>
