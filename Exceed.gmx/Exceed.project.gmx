@@ -49,6 +49,10 @@
       <sprite>sprites\sprLevelOne</sprite>
       <sprite>sprites\sprLevelTwo</sprite>
       <sprite>sprites\sprLevelThree</sprite>
+      <sprite>sprites\Star1</sprite>
+    </sprites>
+    <sprites name="BossSprites">
+      <sprite>sprites\Monkey_Wait_Sprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -89,6 +93,7 @@
       <object>objects\objLevelTwo</object>
       <object>objects\objLevelThree</object>
       <object>objects\objIslandSpawner</object>
+      <object>objects\Star1_Object</object>
     </objects>
   </objects>
   <rooms name="rooms">
