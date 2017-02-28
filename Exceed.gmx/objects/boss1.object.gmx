@@ -30,6 +30,7 @@ mTimer= 3;
 movingLeft= true;
 minX= 50;
 maxX= room_width-50;
+alarm[0] = room_speed *.5
     
 </string>
           </argument>
@@ -54,6 +55,49 @@ maxX= room_width-50;
           <argument>
             <kind>1</kind>
             <string>room_goto(stage2)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>p= instance_create(x, y, objEnemyBullet)
+    p.speed= 15;
+    p.direction = 280
+p= instance_create(x, y, objEnemyBullet)
+    p.speed= 15;
+    p.direction = 260
+p= instance_create(x, y, objEnemyBullet)
+    p.speed= 20;
+    p.direction = 275
+p= instance_create(x, y, objEnemyBullet)
+    p.speed= 20;
+    p.direction = 265;
+audio_play_sound(laser_widebeam,0,0)
+p= instance_create(x, y, objEnemyBullet2)
+    p.speed= 15;
+    p.direction = 290;
+p= instance_create(x, y, objEnemyBullet2)
+    p.speed= 15
+    p.direction= 250;
+audio_play_sound(laser_widebeam,0,0)
+alarm[0] = room_speed * choose(1, 2, 3)
 </string>
           </argument>
         </arguments>
