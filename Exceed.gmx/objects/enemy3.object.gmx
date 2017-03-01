@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed = 10;                
-alarm[0] = room_speed * 1; 
+            <string>vspeed = 6;
+hspeed = 10;                
+alarm[0] = room_speed *.1 ; 
 hp = 10;      
 </string>
           </argument>
@@ -52,7 +53,7 @@ hp = 10;
             <kind>1</kind>
             <string>instance_create(x, y, objEnemyBullet)
 audio_play_sound(laser_widebeam,0,0)
-alarm[0] = room_speed * choose(1, 2, 3)
+alarm[0] = room_speed * 0.1;
 </string>
           </argument>
         </arguments>

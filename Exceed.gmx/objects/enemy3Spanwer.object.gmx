@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spawnInterval= 1000;
-alarm[0] = room_speed * 2;
+            <string>maxEnemy= 1;
+spawnInterval= 100;
+alarm[0] = room_speed * 10;
 </string>
           </argument>
         </arguments>
