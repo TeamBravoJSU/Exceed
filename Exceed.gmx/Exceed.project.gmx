@@ -98,6 +98,7 @@
       <object>objects\objIslandSpawner</object>
       <object>objects\bossSpawner</object>
       <object>objects\enemy1Spawner</object>
+      <object>objects\enemy3Spanwer</object>
     </objects>
   </objects>
   <rooms name="rooms">
