@@ -50,6 +50,7 @@
       <sprite>sprites\sprLevelOne</sprite>
       <sprite>sprites\sprLevelTwo</sprite>
       <sprite>sprites\sprLevelThree</sprite>
+      <sprite>sprites\Alien</sprite>
     </sprites>
     <sprites name="BossSprites">
       <sprite>sprites\MonkeySprite</sprite>
