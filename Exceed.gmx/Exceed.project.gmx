@@ -54,6 +54,7 @@
     </sprites>
     <sprites name="BossSprites">
       <sprite>sprites\MonkeySprite</sprite>
+      <sprite>sprites\MonkeyAttack</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

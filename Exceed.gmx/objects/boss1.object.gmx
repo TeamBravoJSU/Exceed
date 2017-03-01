@@ -32,6 +32,7 @@ minX = 50
 maxX = room_width-50
 alarm[0] = room_speed *.5
 image_speed = 0.3
+state = "normal"
     
 </string>
           </argument>
@@ -78,7 +79,8 @@ image_speed = 0.3
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>p= instance_create(x, y, objEnemyBullet)
+            <string>state = "attack"
+p= instance_create(x, y, objEnemyBullet)
     p.speed= 15;
     p.direction = 280
 p= instance_create(x, y, objEnemyBullet)
@@ -172,6 +174,29 @@ with (other) instance_destroy();
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state = "normal"
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -189,7 +214,14 @@ with (other) instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self()
+            <string>if state == "attack" {
+    sprite_index = MonkeyAttack
+}
+if state == "normal" {
+    sprite_index = MonkeySprite
+}
+//draw_self()
+draw_sprite(sprite_index,image_index,x,y)
 draw_text(x, y-30, string(hp))
 </string>
           </argument>
