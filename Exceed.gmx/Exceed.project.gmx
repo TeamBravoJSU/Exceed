@@ -18,6 +18,7 @@
     <sound>sound\boss_music2</sound>
     <sound>sound\shop_theme</sound>
     <sound>sound\Health_Pickup_Sound</sound>
+    <sound>sound\Hit_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
