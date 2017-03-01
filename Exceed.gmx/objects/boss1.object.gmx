@@ -99,6 +99,7 @@ p= instance_create(x, y, objEnemyBullet2)
 p= instance_create(x, y, objEnemyBullet2)
     p.speed= 15
     p.direction= 250;
+audio_play_sound(MonkeyAttackSound,0,0)
 audio_play_sound(laser_widebeam,0,0)
 alarm[0] = room_speed * choose(1, 2, 3)
 </string>
@@ -167,6 +168,10 @@ if (--hp &lt; 1) {
 }
 else {
     audio_play_sound(Hit_sound,0,0)
+    if !audio_is_playing(MonkeyHurtSound) {
+        audio_play_sound(MonkeyHurtSound,0,0)
+    }
+    state = "hurt"
 }
 with (other) instance_destroy();   
 </string>
@@ -219,6 +224,9 @@ with (other) instance_destroy();
 }
 if state == "normal" {
     sprite_index = MonkeySprite
+}
+if state == "hurt" {
+    sprite_index = MonkeyHurt
 }
 //draw_self()
 draw_sprite(sprite_index,image_index,x,y)

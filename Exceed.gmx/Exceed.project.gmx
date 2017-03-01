@@ -19,6 +19,8 @@
     <sound>sound\shop_theme</sound>
     <sound>sound\Health_Pickup_Sound</sound>
     <sound>sound\Hit_sound</sound>
+    <sound>sound\MonkeyAttackSound</sound>
+    <sound>sound\MonkeyHurtSound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
@@ -55,6 +57,7 @@
     <sprites name="BossSprites">
       <sprite>sprites\MonkeySprite</sprite>
       <sprite>sprites\MonkeyAttack</sprite>
+      <sprite>sprites\MonkeyHurt</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
