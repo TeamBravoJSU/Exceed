@@ -247,6 +247,7 @@ instance_destroy();                  // Destroy the player
             <kind>1</kind>
             <string>health -= 10;                    // Reduce health because of damage
 with (other) instance_destroy(); // Destroy the bullet
+audio_play_sound(Hit_sound,0,0)
 </string>
           </argument>
         </arguments>
@@ -271,6 +272,7 @@ with (other) instance_destroy(); // Destroy the bullet
             <kind>1</kind>
             <string>health -= 10;                    // Reduce health because of damage
 with (other) instance_destroy(); // Destroy the bullet
+audio_play_sound(Hit_sound,0,0)
 </string>
           </argument>
         </arguments>
