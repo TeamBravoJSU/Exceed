@@ -52,7 +52,7 @@ with(objEnemy)
     {instance_destroy()}
 with(enemy2)
     {instance_destroy()}
-with(enemySpawner)
+with(enemy2Spawner)
     {instance_destroy()}
 with(enemy1Spawner)
     {instance_destroy()}

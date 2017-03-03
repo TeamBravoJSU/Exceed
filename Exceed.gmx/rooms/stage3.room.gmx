@@ -54,7 +54,7 @@ audio_play_sound(stage3_stage_music, 1, y)</code>
   <instances>
     <instance objName="objPlayer" x="448" y="544" name="inst_14E8DCEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objControl" x="96" y="64" name="inst_1FDD6E25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemySpawner" x="64" y="96" name="inst_F2892BFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="enemy2Spawner" x="64" y="96" name="inst_F2892BFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemy1Spawner" x="224" y="96" name="inst_32EABA71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemy3Spanwer" x="320" y="96" name="inst_E83AF0FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

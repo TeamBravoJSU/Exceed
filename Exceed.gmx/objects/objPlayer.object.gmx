@@ -30,6 +30,7 @@ turnDir = "none"
 image_speed = 0.3
 maxBomb= 10
 bomb= 3
+maxHealth = 100;
 
 life = 1
 
@@ -113,6 +114,7 @@ room_goto(rmGameOver);
     audio_play_sound(explosion,0,0)
     instance_destroy();              // Destroy the calling instance
 }
+if health &gt;= maxHealth{health = maxHealth}
 
 if keyboard_check(vk_up)|| gamepad_button_check(0,gp_padu){
     y -= 10

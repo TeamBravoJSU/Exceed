@@ -56,8 +56,12 @@ state = "normal"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(stage2)
+            <string>audio_stop_all()
+audio_play_sound(StageClearSound, 1, y)
+room_goto(stage2)
 show_message("Stage Clear!")
+
+
 </string>
           </argument>
         </arguments>
