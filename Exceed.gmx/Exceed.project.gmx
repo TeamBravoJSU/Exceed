@@ -22,6 +22,7 @@
     <sound>sound\Hit_sound</sound>
     <sound>sound\MonkeyAttackSound</sound>
     <sound>sound\MonkeyHurtSound</sound>
+    <sound>sound\BewareSinstar</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
@@ -35,6 +36,7 @@
       <sprite>sprites\sprPlayerBullet</sprite>
       <sprite>sprites\sprEnemyBullet</sprite>
       <sprite>sprites\Enemy_Proj_2_Sprite</sprite>
+      <sprite>sprites\BombWaveSprite</sprite>
     </sprites>
     <sprites name="gameSprites">
       <sprite>sprites\sprTitle1945</sprite>
