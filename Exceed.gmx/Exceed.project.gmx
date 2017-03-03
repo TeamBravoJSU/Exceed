@@ -66,6 +66,7 @@
     <background>background\bckSpaceTile</background>
     <background>background\background2</background>
     <background>background\background4</background>
+    <background>background\background5</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -118,6 +119,7 @@
     <room>rooms\rmLevelSelect</room>
     <room>rooms\stage2</room>
     <room>rooms\rmShop</room>
+    <room>rooms\stage3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

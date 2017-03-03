@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>// add code here
+room_goto(stage3)
 </string>
           </argument>
         </arguments>
