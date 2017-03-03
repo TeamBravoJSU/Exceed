@@ -58,6 +58,7 @@
       <sprite>sprites\MonkeySprite</sprite>
       <sprite>sprites\MonkeyAttack</sprite>
       <sprite>sprites\MonkeyHurt</sprite>
+      <sprite>sprites\sinstar</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
