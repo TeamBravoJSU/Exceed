@@ -55,8 +55,7 @@ image_speed = 0.3
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(SinstarDead,0,0)
-room_goto(stage3)
+            <string>room_goto(stage3)
 show_message("Stage Clear!")
 </string>
           </argument>

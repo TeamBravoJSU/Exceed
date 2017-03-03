@@ -24,7 +24,6 @@
     <sound>sound\MonkeyHurtSound</sound>
     <sound>sound\BewareSinstar</sound>
     <sound>sound\StageClearSound</sound>
-    <sound>sound\SinstarDead</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
