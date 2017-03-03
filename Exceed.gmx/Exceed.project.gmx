@@ -84,6 +84,8 @@
       <object>objects\objPlayerBullet</object>
       <object>objects\objEnemyBullet</object>
       <object>objects\objEnemyBullet2</object>
+      <object>objects\objBomb</object>
+      <object>objects\playerBullet2</object>
     </objects>
     <objects name="enemies">
       <object>objects\objEnemy</object>
@@ -91,6 +93,7 @@
       <object>objects\boss1</object>
       <object>objects\enemy3</object>
       <object>objects\boss2</object>
+      <object>objects\boss3</object>
     </objects>
     <objects name="gameStuff">
       <object>objects\objControl</object>

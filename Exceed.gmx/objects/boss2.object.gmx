@@ -28,6 +28,7 @@
             <string>hp = 600;
 alarm[0] = room_speed *1;
 alarm[2] = room_speed *.1;
+alarm[3] = room_speed * .1;
 //alarm[1] = room_speed *.5
 audio_play_sound(BewareSinstar,0,0)
 image_speed = 0.3
@@ -56,6 +57,36 @@ image_speed = 0.3
             <kind>1</kind>
             <string>room_goto(stage3)
 show_message("Stage Clear!")
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>p= instance_create(x, y, objEnemyBullet)
+p.speed= 15;
+p.direction = 270;
+p= instance_create(x, y, objEnemyBullet)
+p.speed= 15
+p.direction= 275;
+audio_play_sound(laser_widebeam,0,0)
+alarm[3] = room_speed * choose(1, 2, 3)
 </string>
           </argument>
         </arguments>
