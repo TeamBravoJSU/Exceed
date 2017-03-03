@@ -25,12 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*gamepad_axis_count(2)
-var haxis = gamepad_axis_value(0, gp_axislh);
-var vaxis = gamepad_axis_value(0, gp_axislv);
-direction = point_direction(0, 0, haxis, vaxis);
-speed = point_distance(0 ,0, haxis, vaxis) * 50;
-*/
+            <string>
 turnDir = "none"
 image_speed = 0.3
 maxBomb= 10
@@ -119,27 +114,53 @@ room_goto(rmGameOver);
     instance_destroy();              // Destroy the calling instance
 }
 
-if keyboard_check(vk_up) y -= 10
-if keyboard_check(vk_down) y += 10
-if keyboard_check(vk_left){
+if keyboard_check(vk_up)|| gamepad_button_check(0,gp_padu){
+    y -= 10
+}
+
+
+if keyboard_check(vk_down)|| gamepad_button_check(0,gp_padd){
+ y += 10
+ }
+if keyboard_check(vk_left)|| gamepad_button_check(0,gp_padl){
      x -= 10
      turnDir = "left"
 }
-if keyboard_check(vk_right){
+if keyboard_check(vk_right)|| gamepad_button_check(0,gp_padr){
      x += 10
      turnDir = "right"
+}
+if gamepad_button_check_released(0,gp_padl){
+turnDir = "leftToCenter"
+}
+if gamepad_button_check_released(0,gp_padr){
+turnDir = "rightToCenter"
 }
 
 x = median(80, x, room_width-80);
 y = median(80, y, room_height-120)
 
-if (keyboard_check(ord("X"))){
+if (keyboard_check(ord("X")))|| gamepad_button_check(0,gp_face1){
 if (alarm[0] &lt; 0) {
     alarm[0] = room_speed * 0.25; 
     instance_create(x-30, y, objPlayerBullet)
     instance_create(x+30, y, objPlayerBullet)
     audio_play_sound(laser_default,0,0)
     }
+}
+
+if gamepad_button_check(0,gp_face2){
+    if bomb &gt; 0{
+        with (objEnemy)
+        {instance_destroy()}
+        with (enemy2)
+        {instance_destroy()}
+        with (objEnemyBullet)
+        {instance_destroy()}
+        with (objEnemyBullet2)
+        {instance_destroy()}
+    }
+    bomb--
 }
 
 </string>
