@@ -70,6 +70,7 @@ if gamepad_button_check_pressed(0,gp_start){
 instance_create(0,0,objControlPause);
 }
 
+
 </string>
           </argument>
         </arguments>
