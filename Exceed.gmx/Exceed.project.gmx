@@ -87,6 +87,7 @@
     </objects>
     <objects name="gameStuff">
       <object>objects\objControl</object>
+      <object>objects\objControlPause</object>
       <object>objects\objIsland</object>
       <object>objects\objTitle</object>
       <object>objects\objButtonPlay</object>
@@ -104,6 +105,7 @@
       <object>objects\bossSpawner</object>
       <object>objects\enemy1Spawner</object>
       <object>objects\enemy3Spanwer</object>
+      <object>objects\objShop</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -112,6 +114,7 @@
     <room>rooms\rmGameOver</room>
     <room>rooms\rmLevelSelect</room>
     <room>rooms\stage2</room>
+    <room>rooms\rmShop</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
