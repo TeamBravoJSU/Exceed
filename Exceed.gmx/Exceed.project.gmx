@@ -84,6 +84,7 @@
       <object>objects\enemy2</object>
       <object>objects\boss1</object>
       <object>objects\enemy3</object>
+      <object>objects\boss2</object>
     </objects>
     <objects name="gameStuff">
       <object>objects\objControl</object>
@@ -103,6 +104,7 @@
       <object>objects\objLevelThree</object>
       <object>objects\objIslandSpawner</object>
       <object>objects\bossSpawner</object>
+      <object>objects\boss2Spanwer</object>
       <object>objects\enemy1Spawner</object>
       <object>objects\enemy3Spanwer</object>
       <object>objects\objShop</object>

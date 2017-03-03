@@ -57,6 +57,7 @@ state = "normal"
           <argument>
             <kind>1</kind>
             <string>room_goto(stage2)
+show_message("Stage Clear")
 </string>
           </argument>
         </arguments>

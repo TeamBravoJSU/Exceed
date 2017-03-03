@@ -57,6 +57,7 @@ audio_play_sound(stage2_stage_music, 1, y)</code>
     <instance objName="enemy1Spawner" x="198" y="103" name="inst_E13F9CB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="255" y="607" name="inst_C647ED75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemy3Spanwer" x="30" y="181" name="inst_33B4B60C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="boss2Spanwer" x="98" y="143" name="inst_C6B031E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
