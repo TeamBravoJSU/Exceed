@@ -28,6 +28,7 @@
             <string>hp = 600;
 alarm[0] = room_speed *1;
 //alarm[1] = room_speed *.5
+audio_play_sound(BewareSinstar,0,0)
 
 </string>
           </argument>
