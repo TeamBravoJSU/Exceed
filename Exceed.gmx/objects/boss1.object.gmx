@@ -169,6 +169,7 @@ if (--hp &lt; 1) {
 }
 else {
     audio_play_sound(Hit_sound,0,0)
+    image_blend = $0000ff
     if !audio_is_playing(MonkeyHurtSound) {
         audio_play_sound(MonkeyHurtSound,0,0)
     }
@@ -198,6 +199,7 @@ with (other) instance_destroy();
           <argument>
             <kind>1</kind>
             <string>state = "normal"
+image_blend = $ffffff
 </string>
           </argument>
         </arguments>

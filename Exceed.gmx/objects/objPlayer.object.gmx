@@ -248,6 +248,7 @@ instance_destroy();                  // Destroy the player
             <string>health -= 10;                    // Reduce health because of damage
 with (other) instance_destroy(); // Destroy the bullet
 audio_play_sound(Hit_sound,0,0)
+image_blend = $0000ff
 </string>
           </argument>
         </arguments>
@@ -273,6 +274,7 @@ audio_play_sound(Hit_sound,0,0)
             <string>health -= 10;                    // Reduce health because of damage
 with (other) instance_destroy(); // Destroy the bullet
 audio_play_sound(Hit_sound,0,0)
+image_blend = $0000ff
 </string>
           </argument>
         </arguments>
@@ -298,6 +300,7 @@ audio_play_sound(Hit_sound,0,0)
             <string>if sprite_index == Ship_Left_Return or sprite_index == Ship_Right_Return {
     turnDir = "none"
 }
+image_blend = $ffffff
 </string>
           </argument>
         </arguments>
@@ -341,8 +344,8 @@ if sprite_index == Ship_Turn or sprite_index == Ship_Turn_R {
     if image_index &gt;= image_number - 1 {
         image_speed = 0
     }
-}
-draw_sprite(sprite_index,image_index,x,y,)
+} 
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 </string>
           </argument>
         </arguments>
