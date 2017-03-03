@@ -112,7 +112,7 @@ instance_destroy();
             <string>if (--hp &lt; 1) {                      // Check if the hp variable is less than 1
     instance_create(x, y, objExplosion); // Create an explosion
     instance_destroy();                  // Destroy the instance
-    score += 20;                         // Adds to the global score variable
+    global.score += 20;                         // Adds to the global score variable
     audio_play_sound(explosion,0,0)
 }
 else {
@@ -143,6 +143,29 @@ with (other) instance_destroy();     // Destroys the bullet
           <argument>
             <kind>1</kind>
             <string>image_blend = $ffffff
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
 </string>
           </argument>
         </arguments>

@@ -164,7 +164,7 @@ else {
 if (--hp &lt; 1) {                      
     instance_create(x, y, objExplosion); 
     instance_destroy();                  
-    score += 300;                         
+    global.score += 300;                         
     audio_play_sound(explosion,0,0)
 }
 else {
@@ -222,7 +222,9 @@ image_blend = $ffffff
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if state == "attack" {
+            <string>draw_self();
+
+if state == "attack" {
     sprite_index = MonkeyAttack
 }
 if state == "normal" {
