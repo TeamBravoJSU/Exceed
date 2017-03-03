@@ -112,7 +112,7 @@ draw_healthbar((ww/2) - 128,  hh - 48, (ww / 2) + 128, hh - 24, health, c_ltgray
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>score += 100
+            <string>global.score += 100
 </string>
           </argument>
         </arguments>
