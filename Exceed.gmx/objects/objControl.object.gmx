@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.score = 0;
+            <string>global.weapon = 0;
+global.score = 0;
 lives  = 3;
 health = 100;
 
@@ -56,6 +57,13 @@ spawnInterval = 60}
 else if score &lt; 2000{
 spawnInterval = 0}
 
+if keyboard_check_pressed(ord("Z"))
+{
+    global.weapon += 1;
+}
+
+if global.weapon &gt; 2 then global.weapon = 0;
+if global.weapon &lt; 0 then global.weapon = 2;
 
 </string>
           </argument>
