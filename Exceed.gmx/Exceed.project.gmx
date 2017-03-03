@@ -23,6 +23,7 @@
     <sound>sound\MonkeyAttackSound</sound>
     <sound>sound\MonkeyHurtSound</sound>
     <sound>sound\BewareSinstar</sound>
+    <sound>sound\StageClearSound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
