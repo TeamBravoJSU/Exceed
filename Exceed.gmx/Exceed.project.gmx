@@ -102,7 +102,7 @@
       <object>objects\objTitle</object>
       <object>objects\objButtonPlay</object>
       <object>objects\objExplosion</object>
-      <object>objects\enemySpawner</object>
+      <object>objects\enemy2Spawner</object>
       <object>objects\objGameOver</object>
       <object>objects\objMainMenuButton</object>
       <object>objects\objRetryButton</object>
