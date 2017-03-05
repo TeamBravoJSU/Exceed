@@ -38,6 +38,7 @@
       <sprite>sprites\sprEnemyBullet</sprite>
       <sprite>sprites\Enemy_Proj_2_Sprite</sprite>
       <sprite>sprites\BombWaveSprite</sprite>
+      <sprite>sprites\DaLaser</sprite>
     </sprites>
     <sprites name="gameSprites">
       <sprite>sprites\sprTitle1945</sprite>
