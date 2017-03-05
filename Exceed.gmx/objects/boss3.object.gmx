@@ -26,7 +26,104 @@
           <argument>
             <kind>1</kind>
             <string>hp = 1000;
+movingLeft = true
+minX = 50
+maxX = room_width-50
 alarm[0] = room_speed *1;
+alarm[1] = room_speed /.1;
+alarm[3] = room_speed *1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>show_message("Game Clear!")
+room_goto(rmMenu)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>p= instance_create(x, y, playerBullet2)
+    p.speed= 15;
+    p.direction = 280
+p= instance_create(x, y, playerBullet2)
+    p.speed= 15;
+    p.direction = 260
+p= instance_create(x, y, playerBullet2)
+    p.speed= 20;
+    p.direction = 275
+p= instance_create(x, y, playerBullet2)
+    p.speed= 20;
+    p.direction = 265;
+audio_play_sound(laser_widebeam,0,0)
+p= instance_create(x, y, playerBullet2)
+    p.speed= 15;
+    p.direction = 290;
+p= instance_create(x, y, playerBullet2)
+    p.speed= 15
+    p.direction= 250;
+alarm[3] = room_speed * choose(1, 2, 3)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>p= instance_create(x, y, FinalBossBullet)
+    p.speed= 30
+    p.direction= 270
+alarm[0] = room_speed*1
 </string>
           </argument>
         </arguments>
@@ -73,7 +170,41 @@ p= instance_create(x, y, objEnemyBullet)
 p= instance_create(x, y, objEnemyBullet)
     p.speed= 15;
     p.direction= 310
-alarm[0] = room_speed*1
+alarm[1] = room_speed/.1
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(movingLeft){
+    if(x &gt; minX){
+        x-=2
+    }
+    else movingLeft = false;
+}
+else {
+    if(x &lt; maxX){
+        x+=2
+    }
+    else movingLeft = true;
+}
 </string>
           </argument>
         </arguments>
@@ -129,6 +260,29 @@ with (other) instance_destroy();
           <argument>
             <kind>1</kind>
             <string>image_blend = $ffffff
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(x, y-30, string(hp))
 </string>
           </argument>
         </arguments>

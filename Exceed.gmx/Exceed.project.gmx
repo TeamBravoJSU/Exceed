@@ -17,7 +17,6 @@
     <sound>sound\boss_music1</sound>
     <sound>sound\boss_music2</sound>
     <sound>sound\boss_music3</sound>
-    <sound>sound\shop_theme</sound>
     <sound>sound\Health_Pickup_Sound</sound>
     <sound>sound\Hit_sound</sound>
     <sound>sound\MonkeyAttackSound</sound>
@@ -69,8 +68,8 @@
       <sprite>sprites\MonkeyAttack</sprite>
       <sprite>sprites\MonkeyHurt</sprite>
       <sprite>sprites\sinstar</sprite>
-      <sprite>sprites\Eggy</sprite>
       <sprite>sprites\SinstarHurt</sprite>
+      <sprite>sprites\Eggy</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -94,6 +93,7 @@
       <object>objects\objEnemyBullet2</object>
       <object>objects\objBomb</object>
       <object>objects\playerBullet2</object>
+      <object>objects\FinalBossBullet</object>
     </objects>
     <objects name="enemies">
       <object>objects\objEnemy</object>
