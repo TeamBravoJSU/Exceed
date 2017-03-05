@@ -102,7 +102,6 @@
       <object>objects\objTitle</object>
       <object>objects\objButtonPlay</object>
       <object>objects\objExplosion</object>
-      <object>objects\enemy2Spawner</object>
       <object>objects\objGameOver</object>
       <object>objects\objMainMenuButton</object>
       <object>objects\objRetryButton</object>
@@ -112,10 +111,12 @@
       <object>objects\objLevelTwo</object>
       <object>objects\objLevelThree</object>
       <object>objects\objIslandSpawner</object>
+      <object>objects\enemy1Spawner</object>
+      <object>objects\enemy2Spawner</object>
+      <object>objects\enemy3Spanwer</object>
       <object>objects\bossSpawner</object>
       <object>objects\boss2Spanwer</object>
-      <object>objects\enemy1Spawner</object>
-      <object>objects\enemy3Spanwer</object>
+      <object>objects\finalBossSpawer</object>
       <object>objects\objShop</object>
     </objects>
   </objects>
