@@ -120,10 +120,12 @@ alarm[3] = room_speed * choose(1, 2, 3)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>p= instance_create(x, y, FinalBossBullet)
-    p.speed= 30
-    p.direction= 270
+            <string>instance_create(x, y, FinalBossBullet)
+//show_message("Spawned Laser")
+    //p.speed= 30
+    //p.direction= 270
 alarm[0] = room_speed*1
+alarm[1] = room_speed/.1
 </string>
           </argument>
         </arguments>
