@@ -195,13 +195,13 @@ alarm[1] = room_speed/.1
             <kind>1</kind>
             <string>if(movingLeft){
     if(x &gt; minX){
-        x-=2
+        x-=6
     }
     else movingLeft = false;
 }
 else {
     if(x &lt; maxX){
-        x+=2
+        x+=6
     }
     else movingLeft = true;
 }
