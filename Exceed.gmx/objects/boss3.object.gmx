@@ -120,7 +120,7 @@ alarm[3] = room_speed * choose(1, 2, 3)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>p= instance_create(x, y-30, FinalBossBullet)
+            <string>p= instance_create(x, y, FinalBossBullet)
     p.speed= 30
     p.direction= 270
 alarm[0] = room_speed*1
@@ -283,7 +283,6 @@ with (other) instance_destroy();
           <argument>
             <kind>1</kind>
             <string>draw_text(x, y-30, string(hp))
-
 </string>
           </argument>
         </arguments>
