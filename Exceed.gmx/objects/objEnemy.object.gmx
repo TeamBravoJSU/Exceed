@@ -56,6 +56,9 @@ hp = 2;                    // Set the “health” of the enemy
 if randnum &lt;50{
 instance_create(x, y, healthPickup)
 }
+
+instance_create(x, y, objExplosion); // Create an explosion
+audio_play_sound(explosion,0,0)
 </string>
           </argument>
         </arguments>
@@ -138,7 +141,7 @@ instance_destroy();
             <string>if (--hp &lt; 1) {                      // Check if the hp variable is less than 1
     instance_create(x, y, objExplosion); // Create an explosion
     instance_destroy();                  // Destroy the instance
-    global.score += 20;                         // Adds to the global score variable
+                            
     audio_play_sound(explosion,0,0)
 }
 else {
