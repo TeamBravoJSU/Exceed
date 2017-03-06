@@ -122,7 +122,7 @@ alarm[3] = room_speed * choose(1, 2, 3)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, FinalBossBullet)
+            <string>p = instance_create(x, y, FinalBossBullet)
     p.speed= 30
     p.direction= 270
 alarm[0] = room_speed*1

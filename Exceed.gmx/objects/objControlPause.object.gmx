@@ -100,7 +100,7 @@ visible = true;
             <string>draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_center);
-draw_text(view_wview[0]/2, view_hview[0]/2, "PAUSED#Press 'escape' to continue");
+draw_text(view_wview[0]/2, view_hview[0]/2, "PAUSED#Press 'escape' or 'start' to continue");
 draw_text(view_wview[0]/2, view_hview[0]/2 +  60, "Current Score: "+string(global.score));
 draw_set_halign(fa_left);
 </string>
