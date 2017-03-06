@@ -25,7 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rmGame);
+            <string>if global.Level_Number == 1 {
+    room_goto(rmGame)
+}
+if global.Level_Number == 2 {
+    room_goto(stage2)
+}
+if global.Level_Number == 3 {
+    room_goto(stage3)
+}
 </string>
           </argument>
         </arguments>

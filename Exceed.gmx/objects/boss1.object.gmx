@@ -58,6 +58,7 @@ state = "normal"
             <kind>1</kind>
             <string>audio_stop_all()
 audio_play_sound(StageClearSound, 1, y)
+global.Level_Number = 2
 room_goto(stage2)
 show_message("Stage Clear!")
 

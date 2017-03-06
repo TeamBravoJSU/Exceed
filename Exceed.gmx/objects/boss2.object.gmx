@@ -60,6 +60,7 @@ speech = 0
             <string>audio_stop_all()
 audio_play_sound(SinistarDead,0,0)
 audio_play_sound(StageClearSound, 1, y)
+global.Level_Number = 3
 room_goto(stage3)
 show_message("Stage Clear!")
 
