@@ -29,7 +29,7 @@
 turnDir = "none"
 image_speed = 0.3
 maxBomb= 10
-bomb= 3
+global.bomb= 3
 maxHealth = 100;
 
 life = 1
@@ -152,7 +152,7 @@ if (alarm[0] &lt; 0) {
 }
 
 if gamepad_button_check_pressed(0,gp_face2){
-    if bomb &gt; 0{
+    if global.bomb &gt; 0{
         instance_create(x,y , objBomb)
         with (objEnemy)
         {instance_destroy()}
@@ -163,7 +163,7 @@ if gamepad_button_check_pressed(0,gp_face2){
         with (objEnemyBullet2)
         {instance_destroy()}
     }
-    bomb--
+    global.bomb--
 }
 
 </string>
@@ -420,7 +420,7 @@ draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_ang
           <argument>
             <kind>1</kind>
             <string>
-if bomb &gt; 0{
+if global.bomb &gt; 0{
 instance_create(x,y , objBomb)
 with (objEnemy)
 {instance_destroy()}
@@ -433,7 +433,7 @@ with (objEnemyBullet2)
 with (FinalBossBullet)
 {instance_destroy()}
 }
-bomb--
+global.bomb--
 </string>
           </argument>
         </arguments>

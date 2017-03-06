@@ -41,6 +41,7 @@
       <sprite>sprites\sprEnemyBullet</sprite>
       <sprite>sprites\Enemy_Proj_2_Sprite</sprite>
       <sprite>sprites\BombWaveSprite</sprite>
+      <sprite>sprites\bombWave_Sprite</sprite>
       <sprite>sprites\DaLaser</sprite>
       <sprite>sprites\sprPlayerBullet2</sprite>
     </sprites>
