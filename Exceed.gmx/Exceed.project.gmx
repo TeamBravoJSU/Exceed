@@ -28,6 +28,7 @@
     <sound>sound\RunCoward</sound>
     <sound>sound\IHunger</sound>
     <sound>sound\Bomb_Explosin</sound>
+    <sound>sound\finalBossClear</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">

@@ -54,7 +54,9 @@ alarm[3] = room_speed *1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_message("Game Clear!")
+            <string>audio_stop_all()
+audio_play_sound(finalBossClear, 1, y)
+show_message("Game Clear!")
 room_goto(rmMenu)
 </string>
           </argument>
@@ -121,11 +123,12 @@ alarm[3] = room_speed * choose(1, 2, 3)
           <argument>
             <kind>1</kind>
             <string>instance_create(x, y, FinalBossBullet)
-//show_message("Spawned Laser")
-    //p.speed= 30
-    //p.direction= 270
+    p.speed= 30
+    p.direction= 270
 alarm[0] = room_speed*1
 alarm[1] = room_speed/.1
+audio_play_sound(laser_widebeam,0,0)
+
 </string>
           </argument>
         </arguments>

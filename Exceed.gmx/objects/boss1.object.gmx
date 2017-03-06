@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 300;
+            <string>hp = 550;
 mTimer = 3
 movingLeft = true
 minX = 50
