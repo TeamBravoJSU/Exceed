@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// add code here
+            <string>global.Level_Number = 3
 room_goto(stage3)
 </string>
           </argument>

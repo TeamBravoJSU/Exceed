@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rmGame)
+            <string>global.Level_Number = 1
+room_goto(rmGame)
 </string>
           </argument>
         </arguments>
