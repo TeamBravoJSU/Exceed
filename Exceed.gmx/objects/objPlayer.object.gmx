@@ -33,6 +33,7 @@ global.bomb= 3
 maxHealth = 100;
 
 life = 1
+state = "normal"
 
 </string>
           </argument>
@@ -211,7 +212,8 @@ if gamepad_button_check_pressed(0,gp_face2){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();  
+            <string>state = "hurt"
+instance_destroy();  
 </string>
           </argument>
         </arguments>
@@ -263,7 +265,7 @@ instance_destroy();                  // Destroy the player
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();  
+            <string>instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -348,6 +350,7 @@ instance_destroy();                  // Destroy the player
 with (other) instance_destroy(); // Destroy the bullet
 audio_play_sound(Hit_sound,0,0)
 image_blend = $0000ff
+state = "hurt"
 </string>
           </argument>
         </arguments>
@@ -374,6 +377,7 @@ image_blend = $0000ff
 with (other) instance_destroy(); // Destroy the bullet
 audio_play_sound(Hit_sound,0,0)
 image_blend = $0000ff
+state = "hurt"
 </string>
           </argument>
         </arguments>
@@ -400,6 +404,7 @@ image_blend = $0000ff
 with (other) instance_destroy(); // Destroy the bullet
 audio_play_sound(Hit_sound,0,0)
 image_blend = $0000ff
+state = "hurt"
 </string>
           </argument>
         </arguments>
@@ -426,6 +431,7 @@ image_blend = $0000ff
 with (other) instance_destroy(); // Destroy the bullet
 audio_play_sound(Hit_sound,0,0)
 image_blend = $0000ff
+state = "hurt"
 </string>
           </argument>
         </arguments>
@@ -452,6 +458,7 @@ image_blend = $0000ff
     turnDir = "none"
 }
 image_blend = $ffffff
+state = "normal"
 </string>
           </argument>
         </arguments>

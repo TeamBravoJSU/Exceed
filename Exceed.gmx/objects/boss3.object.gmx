@@ -29,6 +29,7 @@
 movingLeft = true
 minX = 50
 maxX = room_width-50
+state = "normal"
 alarm[0] = room_speed *1;
 alarm[1] = room_speed /.1;
 alarm[3] = room_speed *1;
@@ -92,7 +93,7 @@ p= instance_create(x, y, playerBullet2)
 p= instance_create(x, y, playerBullet2)
     p.speed= 20;
     p.direction = 265;
-audio_play_sound(laser_widebeam,0,0)
+audio_play_sound(EggShot,0,0)
 p= instance_create(x, y, playerBullet2)
     p.speed= 15;
     p.direction = 290;
@@ -127,7 +128,7 @@ alarm[3] = room_speed * choose(1, 2, 3)
     p.direction= 270
 alarm[0] = room_speed*1
 alarm[1] = room_speed/.1
-audio_play_sound(laser_widebeam,0,0)
+audio_play_sound(EggLaserSound,0,0)
 
 </string>
           </argument>
@@ -234,7 +235,8 @@ else {
             <kind>1</kind>
             <string>hp-= 5;
 image_blend = $0000ff
-audio_play_sound(Hit_sound,0,0)
+audio_play_sound(EggHitSound,0,0)
+state = "hurt"
 if (--hp &lt; 1) {                      
     instance_create(x, y, objExplosion); 
     instance_destroy();                  
@@ -265,6 +267,7 @@ with (other) instance_destroy();
           <argument>
             <kind>1</kind>
             <string>image_blend = $ffffff
+state = "normal"
 </string>
           </argument>
         </arguments>
@@ -287,7 +290,17 @@ with (other) instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+            <string>if objPlayer.state == "hurt" {
+    sprite_index = Eggy_Laugh
+}
+if state == "hurt" {
+    sprite_index = Eggy_Hurt
+}
+if state == "normal" {
+    sprite_index = Eggy
+}
+
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 draw_text(x, y-30, string(hp))
 </string>
           </argument>

@@ -29,6 +29,10 @@
     <sound>sound\IHunger</sound>
     <sound>sound\Bomb_Explosin</sound>
     <sound>sound\finalBossClear</sound>
+    <sound>sound\EggLaserSound</sound>
+    <sound>sound\EggHitSound</sound>
+    <sound>sound\EggShot</sound>
+    <sound>sound\Credit_music</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
@@ -73,6 +77,8 @@
       <sprite>sprites\sinstar</sprite>
       <sprite>sprites\SinstarHurt</sprite>
       <sprite>sprites\Eggy</sprite>
+      <sprite>sprites\Eggy_Hurt</sprite>
+      <sprite>sprites\Eggy_Laugh</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
