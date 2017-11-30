@@ -169,7 +169,7 @@ else {
 if (--hp &lt; 1) {                      
     instance_create(x, y, objExplosion); 
     instance_destroy();                  
-    global.score += 300;                         
+    score += 300;                         
     audio_play_sound(explosion,0,0)
 }
 else {

@@ -75,9 +75,9 @@ alarm[0] = spawnInterval;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.score &lt; 1000{
+            <string>if score &lt; 1000{
 spawnInterval = 700}
-else if global.score &lt; 2000{
+else if score &lt; 2000{
 spawnInterval = 0}
 
 </string>

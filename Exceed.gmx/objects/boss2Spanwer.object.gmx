@@ -47,7 +47,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.score &gt;= 1500){
+            <string>if(score &gt;= 1500){
 with(objEnemy)
     {instance_destroy()}
 with(enemy2)
