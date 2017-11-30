@@ -9,6 +9,9 @@
    After finishing all 3 stages the credits will roll!
    
    Team Bravo
+   
    Brandon Barnes
+   
    Andrew
+   
    Gabriel
