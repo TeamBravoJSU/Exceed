@@ -20,7 +20,7 @@
    
    ![Imgur](https://i.imgur.com/8QPbkvh.png)
    
-   After finishing all 3 stages the credits will roll!
+   After finishing all 3 stages you beat the game! Thanks for playing and feel free to download and try your own changes.
    
   ## Team Bravo
    
